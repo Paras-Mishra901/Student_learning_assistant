@@ -269,7 +269,3 @@ You may use and modify it for learning, personal projects, or university demonst
 🎓 University Project – Generative AI Based Student Learning Assistant
 
 ---
-
-## ⭐ Support
-
-If you like this project, consider giving it a **star ⭐ on GitHub**!
