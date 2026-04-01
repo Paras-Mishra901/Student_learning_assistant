@@ -182,6 +182,14 @@ In the future, we can improve this project by adding:
 - Mobile-friendly UI  
 
 ---
+## 🎯 Key Highlights
+
+- End-to-end AI-powered study workflow
+- Modular backend design (`core/`)
+- Supports multiple AI providers (Gemini + Hugging Face)
+- Interactive UI using Streamlit
+
+---
 
 ## 👨‍🎓 Academic Relevance
 
