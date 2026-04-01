@@ -1,8 +1,0 @@
-streamlit
-plotly
-pandas
-Pillow
-python-dotenv
-PyMuPDF
-requests
-google-generativeai
