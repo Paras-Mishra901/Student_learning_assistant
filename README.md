@@ -1,10 +1,7 @@
 # 🎓 Generative AI Study Assistant
-An AI-powered study tool that helps students summarize notes, generate quizzes, extract keywords, and interact with learning material using LLMs.
-
+An AI-powered study assistant that helps students efficiently summarize notes, generate quizzes, extract key insights, and interact with learning material using LLMs.
 ## 📌 Problem Definition
-During our studies, we noticed that students often struggle with managing large amounts of study material. Long notes are hard to revise, and creating summaries, important questions, or keywords manually takes a lot of time.
-
-Because of this, students are not always able to prepare efficiently for exams.
+Students often struggle to manage large volumes of study material. Manual summarization, revision, and question generation are time-consuming, leading to inefficient exam preparation.
 
 ---
 
@@ -70,7 +67,7 @@ User Input (GUI)
    ↓
 Streamlit Frontend
    ↓
-Python Backend (Utils)
+Python Backend (Core Modules)
    ↓
 LLM API (Gemini / HuggingFace)
    ↓
