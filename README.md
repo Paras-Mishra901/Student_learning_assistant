@@ -1,30 +1,97 @@
-# Generative AI Study Assistant
+# 🎓 Generative AI Study Assistant
 
-## Problem Definition
-Students often face difficulty in managing large amounts of study material, understanding lengthy notes, and preparing effectively for exams. Manually creating summaries, identifying important concepts, and generating practice questions can be time-consuming and inefficient.
+## 📌 Problem Definition
+During our studies, we noticed that students often struggle with managing large amounts of study material. Long notes are hard to revise, and creating summaries, important questions, or keywords manually takes a lot of time.
 
-This project solves this problem by providing an AI-powered study assistant that helps students interact with their learning material more effectively. The application can summarize notes, answer academic questions, generate quizzes, extract keywords, and provide intelligent study support through a simple web interface.
-
----
-
-## System Architecture
-The project follows a frontend-backend architecture.
-
-- The **frontend** is built using **Streamlit**, which provides the graphical user interface (GUI) where users can upload files, enter questions, and access different learning features.
-- The **backend** is developed in **Python** and handles the application logic using modular utility files.
-- When the user performs an action (such as uploading notes, generating a summary, or asking a question), the frontend sends the input to the backend.
-- The backend processes the request and communicates with the **Large Language Model (LLM)** through **Gemini API or Hugging Face API**.
-- The LLM generates the required output, such as summaries, quiz questions, or answers.
-- The processed result is then returned to the frontend and displayed to the user.
-
-### Data Flow
-User Input (GUI) -> Streamlit Frontend -> Python Backend -> LLM API -> Generated Response -> Streamlit Output
+Because of this, students are not always able to prepare efficiently for exams.
 
 ---
 
-## Usage Instructions
+## 🚀 Solution Overview
+To solve this problem, we built a **Generative AI-based Study Assistant** that helps students interact with their study material in a smarter way.
 
-Follow these steps to run the project locally:
+Our application uses **Large Language Models (LLMs)** to:
+- Summarize long notes
+- Generate quizzes for practice
+- Answer academic questions
+- Extract important keywords
+- Help in writing structured answers
+
+The system is built using **Streamlit**, so everything is available through a simple and interactive web interface.
+
+---
+
+## ✨ Features
+
+- 💬 **AI Chat Assistant**  
+  Students can ask academic questions and get AI-generated answers.
+
+- 📝 **Smart Summarizer**  
+  Converts long text or PDFs into short and easy summaries.
+
+- ❓ **Quiz Generator**  
+  Generates practice questions from any topic or notes.
+
+- 📚 **Answer Generator**  
+  Helps in writing structured answers for exams.
+
+- 🔑 **Keyword Extractor**  
+  Extracts important keywords for quick revision.
+
+- 🎨 **AI Image Generator**  
+  Generates images for presentations and projects.
+
+- 📂 **File Upload Support**  
+  Users can upload TXT or PDF files for processing.
+
+- 📊 **Dashboard Analytics**  
+  Shows usage insights in a visual format.
+
+- 📜 **History & Export**  
+  Saves previous outputs and allows download in JSON/TXT format.
+
+- 📌 **Pinned Prompts**  
+  Users can save frequently used prompts.
+
+---
+
+## 🏗️ System Architecture
+
+In our project, we followed a **frontend-backend architecture**.
+
+- The **frontend** is built using Streamlit, which provides the user interface.
+- The **backend** is implemented in Python using modular files inside the `utils/` folder.
+- For AI functionality, we use **Gemini API / Hugging Face APIs**.
+
+### 🔄 Data Flow
+```
+User Input (GUI)
+   ↓
+Streamlit Frontend
+   ↓
+Python Backend (Utils)
+   ↓
+LLM API (Gemini / HuggingFace)
+   ↓
+Generated Response
+   ↓
+Displayed in Streamlit UI
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language**: Python  
+- **Frontend**: Streamlit  
+- **AI Models**: Gemini API / Hugging Face  
+- **Data Handling**: Pandas  
+- **Visualization**: Plotly  
+- **File Handling**: PDF/Text processing libraries  
+
+---
+
+## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
 ```bash
@@ -32,57 +99,101 @@ git clone <your-github-repository-link>
 cd student_learning_assistant
 ```
 
-### 2. Create and activate a virtual environment
+### 2. Create a virtual environment
 
-**For Windows**
+#### Windows:
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-**For macOS/Linux**
+#### macOS/Linux:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3. Install the required dependencies
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Create a `.env` file for API keys
-Add the required API key(s) in the root directory:
+### 4. Add API keys
 
-```env
+Create a `.env` file in the root folder and add:
+
+```
 HUGGINGFACE_API_KEY=your_api_key_here
 GEMINI_API_KEY=your_api_key_here
 ```
 
-> Note: Keep only the API key(s) that your project actually uses.
+---
 
-### 5. Run the Streamlit application
+### 5. Run the application
 ```bash
 streamlit run app.py
 ```
 
-### 6. Open the application in the browser
-After running the command, Streamlit will generate a local URL such as:
+---
 
-```bash
+### 6. Open in browser
+```
 http://localhost:8501
 ```
 
-Open this link in your browser to use the project.
+---
 
-### 7. Use the application features
-The professor can then:
-- Upload study materials (text or PDF files)
+## 🧑‍💻 How to Use
+
+- Upload notes (TXT/PDF)
 - Generate summaries
-- Create quizzes
-- Ask questions using the chatbot
+- Create quizzes for practice
+- Ask questions using chatbot
 - Extract keywords
-- Generate answers for study topics
+- Generate answers
+- Create AI-based images
+- View and export history
+
+---
+
+## 📸 Screenshots
+
+Example:
+
+![Dashboard](screenshots/dashboard.png)
+![Chat Assistant](screenshots/chat.png)
+![Summarizer](screenshots/summarizer.png)
 
 
-> Important: An internet connection is required because the application communicates with external AI APIs.
+---
+
+## 🌐 Important Note
+
+- Internet connection is required for AI features  
+- The application uses external APIs (Gemini / Hugging Face)
+
+---
+
+## 🔮 Future Scope
+
+In the future, we can improve this project by adding:
+- Voice-based interaction  
+- Personalized study recommendations  
+- Offline AI model support  
+- Integration with learning platforms  
+- Mobile-friendly UI  
+
+---
+
+## 👨‍🎓 Academic Relevance
+
+This project helped us understand:
+- How Generative AI works in real applications  
+- How to integrate LLM APIs into a system  
+- How to build a complete application with GUI and backend  
+- How to solve real-world problems using AI  
+
+---
+
+## 📄 License
+This project is developed for academic purposes.
