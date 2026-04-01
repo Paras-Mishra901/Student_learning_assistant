@@ -84,4 +84,5 @@ The professor can then:
 - Extract keywords
 - Generate answers for study topics
 
+
 > Important: An internet connection is required because the application communicates with external AI APIs.
