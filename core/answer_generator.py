@@ -1,4 +1,4 @@
-from utils.chatbot import get_chatbot_response
+from core.chatbot import get_chatbot_response
 
 
 def generate_answer(question, support_text=""):

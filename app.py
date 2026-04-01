@@ -4,14 +4,14 @@ import pandas as pd
 import json
 from datetime import datetime
 
-from utils.chatbot import get_chatbot_response
-from utils.summarizer import summarize_text
-from utils.quiz_generator import generate_quiz
-from utils.answer_generator import generate_answer
-from utils.file_handler import extract_text_from_file
-from utils.keyword_extractor import extract_keywords
-from utils.image_generator import generate_image
-from utils.export_utils import export_history_as_txt
+from core.chatbot import get_chatbot_response
+from core.summarizer import summarize_text
+from core.quiz_generator import generate_quiz
+from core.answer_generator import generate_answer
+from core.file_handler import extract_text_from_file
+from core.keyword_extractor import extract_keywords
+from core.image_generator import generate_image
+from core.export_utils import export_history_as_txt
 
 st.set_page_config(
     page_title="Student Learning Assistant",
